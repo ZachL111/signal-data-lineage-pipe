@@ -1,0 +1,28 @@
+{
+  "repo": "signal-data-lineage-pipe",
+  "language": "C++",
+  "category": "Data engineering",
+  "goal": "Build a C++ toolkit that studies lineage behavior through deny and allow fixtures, with explainable decision traces and local-only command execution.",
+  "weights": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 5
+  },
+  "thresholds": {
+    "ship": 205,
+    "watch": 126
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}

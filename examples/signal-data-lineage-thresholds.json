@@ -1,0 +1,17 @@
+{
+  "repo": "signal-data-lineage-pipe",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 205,
+    "watch": 126
+  },
+  "terms": [
+    "schema drift",
+    "lineage depth",
+    "partition skew",
+    "quality gap"
+  ]
+}
